@@ -1,0 +1,48 @@
+[
+    {
+        "title": "@@org.joget.marketplace.tesseractocrtool.config@@",
+        "properties": [
+            {
+                "name": "language",
+                "label": "@@org.joget.marketplace.tesseractocrtool.language@@",
+                "type": "selectbox",
+                "required": "True",
+                "options": [
+                    {
+                        "value": "eng",
+                        "label": "English"
+                    }
+                ]
+            },
+            {
+                "name": "languageModelPath",
+                "label": "@@org.joget.marketplace.tesseractocrtool.languageModelPath@@",
+                "type": "textfield",
+                "required": "True"
+            },
+            {
+                "name": "formDefId",
+                "label": "@@org.joget.marketplace.tesseractocrtool.formDefId@@",
+                "type": "selectbox",
+                "required": "True",
+                "options_ajax": "[CONTEXT_PATH]/web/json/console/app[APP_PATH]/forms/options"
+            },
+            {
+                "name": "loadData",
+                "label": "@@org.joget.marketplace.tesseractocrtool.loadData@@",
+                "type": "selectbox",
+                "required": "True",
+                "options_ajax_on_change": "formDefId",
+                "options_ajax": "[CONTEXT_PATH]/web/json/console/app[APP_PATH]/form/columns/options"
+            },
+            {
+                "name": "storeData",
+                "label": "@@org.joget.marketplace.tesseractocrtool.storeData@@",
+                "type": "selectbox",
+                "required": "True",
+                "options_ajax_on_change": "formDefId",
+                "options_ajax": "[CONTEXT_PATH]/web/json/console/app[APP_PATH]/form/columns/options"
+            }
+        ]
+    }
+]
