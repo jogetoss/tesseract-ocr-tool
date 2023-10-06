@@ -1,6 +1,7 @@
 # Description
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+The Tesseract OCR Tool plugin is to integrate Tesseract Open Source OCR Engine as a process tool to perform image recognition on uploaded files.
+
 
 # Getting Help
 
